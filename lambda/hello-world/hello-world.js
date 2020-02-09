@@ -5,7 +5,7 @@ const currentDir = process.env.LAMBDA_TASK_ROOT;
 
 exports.handler = async () => {
   try {
-    const content = await fs.readFile(path.join(currentDir, "data.json"), {
+    const content = await fs.readFile(path.join(currentDir, "data.html"), {
       encoding: "utf-8"
     });
     return {
